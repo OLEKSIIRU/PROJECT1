@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>dc940765-c2e2-44c1-8956-5efbab37fc87</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>PROJECT1.py</StartupFile>
+    <StartupFile>if_Ülesanne.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -21,6 +21,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="if_Ülesanne.py" />
     <Compile Include="PROJECT1.py" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />

@@ -1,3 +1,95 @@
+#Ülesanne 14
+
+
+
+
+#Ülesanne 13
+
+sex=input("Укажите свой пол").lower
+if sex=="мужчина":
+    yo=int(input("Укажите свой возраст"))
+    if 16<yo<18:
+        print("Ждем вас в команде")
+    else:print("Извините, вы нам не подходите")
+else: print("Извините, вы нам не подходите")
+
+
+
+
+#Ülesanne 12
+
+price=float(input("Введите цену продукта"))
+if 10<price<20:
+    print("Final price"+price-price/100*10)
+if price>20:
+    print("Final price"+price-price/100*20)
+
+
+
+
+#Ülesanne 11
+from datetime import date
+
+sp=date(int(input("Sünniaasta: ")),int(input("Sünnikuu: ")),int(input("Sünnipäev: ")))
+praegu=date.today().year #2023
+
+if (praegu-sp.year)%10==0:#sp>date(2000,1,1):
+    print("Juubel")
+else:
+    print("------")
+
+#Ülesanne 10
+a=float(input("Введите первое число"))
+b=float(input("Введите второе число"))
+t=input("Tegevust:")
+      if t in ['+','-','/','*']:
+                if t=='+':
+                    v=a+b
+                elif t=='-':
+                    v=a-b
+                elif t=='*':
+                    v=a*b
+                elif t=='/':
+                    if b==0:
+                        v="DIV/0"
+                    else:
+                        v=a/b
+                print("{0}{1}{2}={3}").format(a,t,b,v)
+      else: print("ERROR")
+
+       
+
+
+#Ülesanne 9
+
+LA=float(input("Введите первую сторону квадрата"))
+Б=float(input("Введите вторую сторону квадрата"))
+В=float(input("Введите третюю сторону квадрата"))
+Г=float(input("Введите четвертую сторону квадрата"))
+if LA==Б==В==Г:
+    print("Квадрат")
+else: print("Все что угодно кроме квадрата")
+
+#Ülesanne 8
+K=str(input("Вы хотите купить молоко?"))
+if K=="ja":
+    J=80
+else: J=0
+Ö=str(input("Вы хотите купить хлеб?"))
+if Ö=="ja":
+    L=J+30
+else: L=J
+Ü=str(input("Вы хотите купить булку?"))
+if Ü=="ja":
+    Kokku=L+35
+else: Kokku=L
+
+
+
+
+
+
+
 #Ülesanne 7
 S=str(input("Пол")).lower
 if S=="мужской":
@@ -57,9 +149,9 @@ if W=="да":
     print(A*B*Q+"-cтоимость замены пола")
 
 #Ülesanne 2
-a=str(input("Mis sinu nimi on? "))
-b=str(input("Mis tema nimi on? "))
-print(a+"JA"+b+"on täna pinginaabrid")
+d=str(input("Mis sinu nimi on? "))
+u=str(input("Mis tema nimi on? "))
+print(d+"JA"+u+"on täna pinginaabrid")
 
 
 
