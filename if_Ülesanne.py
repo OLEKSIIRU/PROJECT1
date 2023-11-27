@@ -3,6 +3,10 @@ nimi=str(input("Введите свое имя: "))
 print(nimi+", oi kui ilus nimi!")
 v=print(input(nimi+" Kas leian Sinu keha indeksi? 0-ei, 1-jah"))
 if v==1:
+    try:
+        v=float(input("1"))
+  except:
+   print("ValueError")
     pikkus=int(input("kui pik sa oled?"))
     mass=float(input("kui palju Te kaalute?"))
     indeks=mass/(0.01*pikkus**2)
@@ -23,3 +27,9 @@ if v==1:
         print("Tervisele ohtlik rasvumine")
 else:print("Kahju! See on väga kasulik info!")
 print("")
+print("Kohtumiseni,"+nimi+"! Igavesti Sinu, Python!"
+
+
+
+
+
